@@ -1,0 +1,53 @@
+/* =====================
+   FOOTER
+   ===================== */
+.footer {
+  border-top: 0.5px solid var(--border);
+  padding: 2rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer__copy {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.footer__copy span {
+  color: var(--accent);
+}
+
+.footer__links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer__links a {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: color var(--transition);
+}
+
+.footer__links a:hover {
+  color: var(--accent);
+}
+
+/* =====================
+   RESPONSIVO
+   ===================== */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 1.25rem;
+    flex-direction: column;
+    text-align: center;
+  }
+}

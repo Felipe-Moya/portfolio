@@ -1,0 +1,41 @@
+:root {
+
+  /* Cores principais */
+  --bg-primary:     #080c10;
+  --bg-secondary:   #0d1117;
+  --bg-tertiary:    #111820;
+  --surface:        #141c26;
+  --surface-2:      #1a2333;
+
+  /* Accent verde — identidade do site */
+  --accent:         #00e5a0;
+  --accent-dim:     rgba(0, 229, 160, 0.08);
+  --accent-border:  rgba(0, 229, 160, 0.15);
+  --accent-border2: rgba(0, 229, 160, 0.30);
+
+  /* Texto */
+  --text-primary:   #e8edf2;
+  --text-secondary: #8a9bb0;
+  --text-muted:     #4a5a6a;
+
+  /* Bordas */
+  --border:         rgba(0, 229, 160, 0.15);
+  --border-hover:   rgba(0, 229, 160, 0.30);
+
+  /* Tipografia */
+  --font-sans: 'Syne', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  /* Espaçamentos */
+  --section-padding: 5rem 2.5rem;
+  --max-width: 1100px;
+
+  /* Bordas arredondadas */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  /* Transições */
+  --transition: 0.2s ease;
+  --transition-slow: 0.3s ease;
+
+}

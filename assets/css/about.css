@@ -1,0 +1,179 @@
+/* =====================
+   SOBRE MIM
+   ===================== */
+.about {
+  padding: 0;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 5rem;
+  align-items: center;
+  max-width: var(--max-width);
+}
+
+/* FOTO */
+.about__photo-wrap {
+  position: relative;
+  max-width: 360px;
+}
+
+.about__photo-frame {
+  width: 100%;
+  aspect-ratio: 1;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 20px) 0,
+    100% 20px,
+    100% 100%,
+    20px 100%,
+    0 calc(100% - 20px)
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+/* Scanlines na foto placeholder */
+.about__photo-frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 229, 160, 0.02) 2px,
+    rgba(0, 229, 160, 0.02) 4px
+  );
+  pointer-events: none;
+}
+
+.about__photo-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  border: 2px dashed var(--accent-border2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--text-muted);
+  position: relative;
+  z-index: 1;
+}
+
+.about__photo-hint {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  position: relative;
+  z-index: 1;
+}
+
+/* Cantos decorativos */
+.about__corner {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-color: var(--accent);
+  border-style: solid;
+}
+
+.about__corner--tl {
+  top: -1px;
+  left: -1px;
+  border-width: 2px 0 0 2px;
+}
+
+.about__corner--br {
+  bottom: -1px;
+  right: -1px;
+  border-width: 0 2px 2px 0;
+}
+
+/* TEXTO */
+.about__text p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.about__text p:last-of-type {
+  margin-bottom: 0;
+}
+
+.about__highlight {
+  color: var(--accent);
+}
+
+/* STATS */
+.about__stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.about__stat {
+  background: var(--surface);
+  border: 0.5px solid var(--border);
+  padding: 1rem 1.25rem;
+  transition: border-color var(--transition),
+              opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about__stat:hover {
+  border-color: var(--accent-border2);
+}
+
+.about__stat-num {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.about__stat-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+}
+
+/* =====================
+   RESPONSIVO
+   ===================== */
+@media (max-width: 1024px) {
+  .about__grid {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about__photo-wrap {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .about__stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}

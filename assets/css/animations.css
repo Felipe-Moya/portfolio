@@ -1,0 +1,46 @@
+/* =====================
+   ANIMAÇÕES DE ENTRADA
+   Carregado por último — sobrescreve transições dos componentes
+   ===================== */
+.about__photo-wrap,
+.about__text,
+.about__stat,
+.skill__category,
+.project__card,
+.cert__card,
+.blog__card,
+.contact__link {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.about__photo-wrap.visible,
+.about__text.visible,
+.about__stat.visible,
+.skill__category.visible,
+.project__card.visible,
+.cert__card.visible,
+.blog__card.visible,
+.contact__link.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero */
+.hero__content > * {
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.hero__content > *:nth-child(1) { animation-delay: 0.1s; }
+.hero__content > *:nth-child(2) { animation-delay: 0.2s; }
+.hero__content > *:nth-child(3) { animation-delay: 0.3s; }
+.hero__content > *:nth-child(4) { animation-delay: 0.4s; }
+.hero__content > *:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
