@@ -4,7 +4,7 @@ export function initNavbar() {
   navbar.innerHTML = `
     <nav class="navbar" role="navigation" aria-label="Menu principal">
       <div class="navbar__logo">
-        FM<span>_</span>dev
+        lippe<span>.</span>sec
       </div>
       <ul class="navbar__links">
         <li><a href="#sobre">sobre</a></li>
