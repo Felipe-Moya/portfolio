@@ -11,38 +11,41 @@ sem frameworks ou dependências externas.
 
 ## 📁 Estrutura do projeto
 
+```
 portfolio/
 ├── index.html
 ├── README.md
+├── .gitignore
 └── assets/
-├── css/
-│   ├── reset.css
-│   ├── variables.css
-│   ├── global.css
-│   ├── animations.css
-│   ├── nav.css
-│   ├── hero.css
-│   ├── about.css
-│   ├── skills.css
-│   ├── projects.css
-│   ├── certifications.css
-│   ├── blog.css
-│   ├── contact.css
-│   └── footer.css
-├── js/
-│   ├── components/
-│   │   ├── navbar.js
-│   │   ├── hero.js
-│   │   ├── about.js
-│   │   ├── skills.js
-│   │   ├── projects.js
-│   │   ├── certifications.js
-│   │   ├── blog.js
-│   │   ├── contact.js
-│   │   └── footer.js
-│   ├── animations.js
-│   └── main.js
-└── images/
+    ├── css/
+    │   ├── reset.css
+    │   ├── variables.css
+    │   ├── global.css
+    │   ├── animations.css
+    │   ├── nav.css
+    │   ├── hero.css
+    │   ├── about.css
+    │   ├── skills.css
+    │   ├── projects.css
+    │   ├── certifications.css
+    │   ├── blog.css
+    │   ├── contact.css
+    │   └── footer.css
+    ├── js/
+    │   ├── components/
+    │   │   ├── navbar.js
+    │   │   ├── hero.js
+    │   │   ├── about.js
+    │   │   ├── skills.js
+    │   │   ├── projects.js
+    │   │   ├── certifications.js
+    │   │   ├── blog.js
+    │   │   ├── contact.js
+    │   │   └── footer.js
+    │   ├── animations.js
+    │   └── main.js
+    └── images/
+```
 
 ## ✨ Funcionalidades
 
