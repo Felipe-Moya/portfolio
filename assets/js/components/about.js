@@ -8,8 +8,10 @@ export function initAbout() {
       <div class="about__grid">
         <div class="about__photo-wrap">
           <div class="about__photo-frame">
-            <div class="about__photo-icon">👤</div>
-            <p class="about__photo-hint">// foto em breve</p>
+            <img 
+              src="assets/imagens/foto.png" 
+              alt="Felipe Moya Figueiredo"
+              style="width:100%; height:100%; object-fit:cover; position:relative; z-index:1;">
           </div>
           <div class="about__corner about__corner--tl"></div>
           <div class="about__corner about__corner--br"></div>
