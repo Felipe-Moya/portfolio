@@ -18,16 +18,18 @@ export function initBlog() {
         </div>
       </div>
       <div class="blog__card">
-        <div class="blog__tag">Em breve · LinkedIn</div>
-        <div class="blog__title">Como construí um Mini SIEM do zero</div>
-        <p class="blog__excerpt">
-          Do problema real ao código: como detectar e bloquear ataques
-          de força bruta automaticamente com Python e análise de logs.
-        </p>
-        <div class="blog__footer">
-          <span class="blog__coming">// em produção</span>
-          <span class="blog__arrow">→</span>
-        </div>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7462524985434112000/" target="_blank" rel="noopener noreferrer" class="blog__card">
+          <div class="blog__tag">LinkedIn · Publicado</div>
+          <div class="blog__title">Como construí um Mini SIEM do zero</div>
+          <p class="blog__excerpt">
+            Do problema real ao código: como detectar e bloquear ataques
+            de força bruta automaticamente com Python e análise de logs.
+          </p>
+          <div class="blog__footer">
+            <span class="blog__coming">// ver post</span>
+            <span class="blog__arrow">→</span>
+          </div>
+        </a>
       </div>
       <div class="blog__card">
         <div class="blog__tag">Em breve · LinkedIn</div>
